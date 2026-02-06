@@ -53,7 +53,7 @@ const Events = () => {
       id: 3,
       title: 'JAVA',
       date: 'JANUARY 01, 2025',
-      dateObj: new Date('JANUARY 15, 2025'), // Added date object for sorting
+      dateObj: new Date('JANUARY 01, 2025'), // Added date object for sorting
       price: 1000,
       location: 'Virtual',
       image: 'https://res.cloudinary.com/dygzdptij/image/upload/v1745647088/images/java_elwnpd.png',

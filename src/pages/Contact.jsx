@@ -42,25 +42,14 @@ const Contact = () => {
   // Submit form and send emails via Email Service
   const submitForm = async (values, { resetForm, setSubmitting }) => {
     if (!recaptchaToken) {
-    alert("Please verify that you're not a robot.");
-    setFormSubmitted(false);
-    return;
-  }
+      alert("Please verify that you're not a robot.");
+      setFormSubmitted(false);
+      setSubmitting(false);
+      return;
+    }
 
-  // Proceed with submission
-  console.log("Submitted values:", values);
-  console.log("reCAPTCHA token:", recaptchaToken);
     showLoading();
     setSubmissionError(null);
-    if (!recaptchaToken) {
-    alert("Please verify that you're not a robot.");
-    setFormSubmitted(false);
-    return;
-  }
-
-  // Proceed with submission
-  console.log("Submitted values:", values);
-  console.log("reCAPTCHA token:", recaptchaToken);
 
     try {
       // Send emails using the email service abstraction

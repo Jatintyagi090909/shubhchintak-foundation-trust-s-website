@@ -569,23 +569,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out;
 }
 
-/* Menu item hover animation */
-.nav-menu a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  bottom: -5px;
-  left: 0;
-  transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after,
-.nav-menu .active > a::after {
-  width: 100%;
-}
-
 /* Card hover effects */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

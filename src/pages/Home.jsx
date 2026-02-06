@@ -91,7 +91,7 @@ const Home = () => {
           .carousel-caption {
             display: block !important;
             position: relative;
-            background: taransparent;
+            background: transparent;
             padding: 10px;
             left: 0;
             right: 0;
@@ -486,7 +486,7 @@ const Home = () => {
                   right: 0,
                   bottom: 0,
                   padding: '1.5rem 1rem',
-                  background: 'taransparent',
+                  background: 'transparent',
                   color: 'black',
                   borderBottomLeftRadius: '0.5rem',
                   borderBottomRightRadius: '0.5rem',
